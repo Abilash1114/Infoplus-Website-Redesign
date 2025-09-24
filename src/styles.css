@@ -1,3 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   /* font-family: "Roboto Flex", sans-serif; */
     /* font-family: "Roboto", sans-serif; */
+    /* p{
+      font-weight: 500;
+      font-family: "Roboto", sans-serif;
+      color: #554B5E;
+    } */
+    
+.container-fluid{
+  margin: 0px 20px;
+}

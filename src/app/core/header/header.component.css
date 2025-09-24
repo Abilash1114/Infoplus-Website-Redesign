@@ -1,0 +1,23 @@
+.top_nav {
+    background: #6A0DAD;
+    background: linear-gradient(90deg, rgba(106, 13, 173, 1) 0%, rgba(10, 25, 47, 1) 100%);
+    border-radius: 60px;
+    padding: 15px 10px !important;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top{
+    position: relative;
+}
+
+.nav_items p {
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px !important;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
