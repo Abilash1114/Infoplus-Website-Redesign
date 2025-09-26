@@ -128,3 +128,17 @@
  .center_box{
     scale: 0;
  }
+
+ .pin_content_1{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .pin_content_2{
+    margin-top: 20px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+ }
