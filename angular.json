@@ -30,12 +30,15 @@
               "node_modules/remixicon/fonts/remixicon.css"
             ],
             "scripts": [
-                   "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/gsap/dist/gsap.min.js",
-              "node_modules/gsap/dist/ScrollTrigger.min.js",
-              "node_modules/gsap/dist/TextPlugin.min.js",
-              "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/js/main.js"
+          "node_modules/jquery/dist/jquery.min.js",
+          "node_modules/bootstrap/dist/js/bootstrap.min.js",
+           "node_modules/gsap/dist/gsap.min.js",
+          "node_modules/gsap/dist/ScrollTrigger.min.js",
+          "node_modules/gsap/dist/TextPlugin.min.js",
+          "src/assets/js/SplitText.min.js",
+          "src/assets/js/ScrollSmoother.min.js",
+          "src/assets/js/lenis.min.js",
+          "src/assets/js/main.js"
             ]
           },
           "configurations": {
