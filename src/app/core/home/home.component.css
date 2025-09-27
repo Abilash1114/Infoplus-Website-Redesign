@@ -13,7 +13,11 @@
 #content{
     min-height: 100%;
 } */
-
+p{
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+}
 .top_nav {
     background: #6A0DAD;
     background: linear-gradient(90deg, rgba(106, 13, 173, 1) 0%, rgba(10, 25, 47, 1) 100%);
@@ -26,7 +30,7 @@
     width: 0%;
 }
 
-.top{
+.top {
     position: relative;
 }
 
@@ -45,7 +49,7 @@
 .back {
     background: url('../../../assets/images/background.png');
     /* width: 100vw; */
-    height: 150vh;
+    height: 100vh;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -113,32 +117,298 @@
     cursor: pointer;
 }
 
-.web_button p:hover{
+.web_button p:hover {
     background-color: #66378f;
 }
 
- .ban-1,.ban-2,.ban-3,.ban-4,.ban-5,.ban-6{
+.ban-1,
+.ban-2,
+.ban-3,
+.ban-4,
+.ban-5,
+.ban-6 {
     position: absolute;
     left: 50%;
     right: 0;
     bottom: 0;
     z-index: -1;
- }
+}
 
- .center_box{
+.center_box {
     scale: 0;
- }
+}
 
- .pin_content_1{
+.pin_content_1 {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
- .pin_content_2{
+.pin_content_2 {
     margin-top: 20px;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
- }
+}
+
+
+/* <!-- Digital Start --> */
+
+.digi_card {
+    width: 100%;
+    border: 1px solid #ECD9F9;
+    border-radius: 22px;
+    color: white;
+    padding: 20px 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 0px 30px;
+}
+
+.di {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.digi_card_back {
+    position: relative;
+    overflow: hidden;
+}
+
+.card_1 {
+    position: absolute;
+    left: 30px;
+    top: 120px;
+}
+
+.card_4 {
+    position: absolute;
+    right: 30px;
+    top: 120px;
+}
+
+.card_2 {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+
+.card_3 {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+}
+
+.card_5 {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+
+.digi_card h6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20;
+    font-weight: 500;
+    color: #5D3E73;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.digi_card p {
+    color: #5A585B;
+    font-size: 16;
+    padding: 0px;
+    margin: 0px;
+}
+
+.head-titles {
+    margin-top: 50px;
+}
+
+.head-titles h6 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    color: #31312F;
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+.head-titles h6 span {
+    color: #331465;
+}
+
+.head-titles p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #45394D;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+
+.head-titles p::before {
+    content: '';
+    width: 40px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #331465;
+    position: absolute;
+    left: -50px;
+    top: 12px;
+}
+
+/* <!-- Digital End --> */
+
+/* <!-- About Section Start --> */
+.about {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.about_tit {
+    padding-left: 25px;
+}
+
+.about.active .about_tit h6 {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #6A0DAD;
+    margin-bottom: 5px;
+}
+
+.about.active .about_tit p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16;
+    color: #3C3C3C;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.about_tit h6 {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #9B9A9C;
+    margin-bottom: 5px;
+}
+
+.about_tit p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16;
+    color: #9B9A9C;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.star {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.right_images {
+    background-image: url('/assets/images/heart.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_images img {
+    padding-top: 30%;
+}
+
+.custom_wraper{
+position: relative;
+      overflow:visible;
+}
+      .custom-shape {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #0a1430, #6a00b5);
+      clip-path: polygon(
+        7% 0,   /* top-left cut */
+        93% 0,  /* top-right cut */
+        100% 100%, /* bottom-right */
+        0% 100%   /* bottom-left */
+      );
+      border-radius: 8px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      
+    }
+
+.cus p{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.about-de{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-de p{
+    color: white;
+}
+
+.about-de .nu p{
+    font-size: 36px;
+    font-weight: 600;
+        font-family: "Roboto", sans-serif;
+}
+
+.about-de .name p{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400 !important;
+}
+
+.about-over{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.three{
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    z-index: 99;
+       top: 30px;
+}
+.three3d{
+    z-index: 99;
+      position: absolute;
+    right: -50px;
+        width: 200px;
+        top: 30px;
+}
+
+/* <!-- About Section End --> */

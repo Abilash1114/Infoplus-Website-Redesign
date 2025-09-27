@@ -78,7 +78,7 @@ function title() {
     })
 
     gsap.to('.ban-5', {
-        top: '28%',
+        top: '30%',
         left: '88%',
         duration: 2,
         scrollTrigger: {
@@ -106,47 +106,47 @@ function title() {
 }
 
 function dashboard() {
-    
+
 
 
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to('.dashboard',{
-        y:'-95%',
-        duration:5,
-          ease: "power2.out",
-          scrollTrigger:{
-            trigger:".dashboard",
-            start:"top 50%",
-            end:"bottom -85%",
-            scrub:true,
-            markers:false
-          }
+    gsap.to('.dashboard', {
+        y: '-95%',
+        duration: 5,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: ".dashboard",
+            start: "top 50%",
+            end: "bottom -55%",
+            scrub: true,
+            markers: false
+        }
     })
 }
 
-function logo(){
-// gsap.registerPlugin(ScrollTrigger)
-// let pin_section = document.querySelectorAll('.pin_section')
-// let pin_content_1 = document .querySelectorAll('.pin_content_1')
-// let pin_content_2 = document.querySelectorAll('.pin_content_2')
+function logo() {
+    // gsap.registerPlugin(ScrollTrigger)
+    // let pin_section = document.querySelectorAll('.pin_section')
+    // let pin_content_1 = document .querySelectorAll('.pin_content_1')
+    // let pin_content_2 = document.querySelectorAll('.pin_content_2')
 
-// const tl= gsap.timeline({
-//     trigger:'.pin_section',
-//     pin:true,
-//     scrub:true,
-//     start:"top top",
-//     end:()=>"+="+pin_section.offsetWidth*2,
-//     invalidateOnRefresh: true,
-// })
+    // const tl= gsap.timeline({
+    //     trigger:'.pin_section',
+    //     pin:true,
+    //     scrub:true,
+    //     start:"top top",
+    //     end:()=>"+="+pin_section.offsetWidth*2,
+    //     invalidateOnRefresh: true,
+    // })
 
-// tl.fromTo(pin_content_1,
-//     {x:0},
-//     {x:()=>-document.body.clientWidth,ease:"none"},0
-// )
+    // tl.fromTo(pin_content_1,
+    //     {x:0},
+    //     {x:()=>-document.body.clientWidth,ease:"none"},0
+    // )
 
-// tl.fromTo(pin_content_2,
-//     {X:0},
-//     {X:()=>document.body.clientWidth,ease:'none'},0
-// )
+    // tl.fromTo(pin_content_2,
+    //     {X:0},
+    //     {X:()=>document.body.clientWidth,ease:'none'},0
+    // )
 
 }
