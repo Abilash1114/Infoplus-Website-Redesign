@@ -1,0 +1,19 @@
+.foot_left p{
+    color: white;
+    margin-top: 10px;
+}
+
+.foot_tit h6{
+color: white;
+font-family: "Roboto", sans-serif;
+font-size: 18px;
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+.foot_text p{
+    color: white;
+    font-size: 14;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
