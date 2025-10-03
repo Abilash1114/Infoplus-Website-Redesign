@@ -176,6 +176,38 @@ function logo() {
     });
 }
 
+function slide(){
+    gsap.registerPlugin(ScrollTrigger)
+    
+    gsap.to(".first_slide",{
+        y:-120,
+        scrollTrigger:{
+            trigger:".first_slide",
+            start:"top -=100%",
+            end:"bottom -500%",
+            scrub:true,
+            markers:false,
+            duration:1,
+        }
+    })
+
+    gsap.set(".secound_slide",{
+        y:-320,
+    })
+     gsap.to(".secound_slide",{
+        
+        y:120,
+        scrollTrigger:{
+            trigger:".secound_slide",
+            start:"top -=100%",
+            end:"bottom -500%",
+            scrub:true,
+            markers:false,
+            duration:1,
+        }
+    })
+}
+
 function about() {
     let aboutindex = document.querySelectorAll('.about')
     let rightimage = document.getElementById('right_image')

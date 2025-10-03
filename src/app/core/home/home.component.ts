@@ -3,7 +3,7 @@ import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 declare function title(): any;
 declare function dashboard(): any;
 declare function logo(): any;
-declare function slider(): any;
+declare function slide(): any;
 declare function slider2(): any;
 declare function slider3(): any;
 @Component({
@@ -23,7 +23,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
     title();
     dashboard();
     logo();
-    // slider();
+    slide();
     // slider2();
     // slider3();
     this.change();
