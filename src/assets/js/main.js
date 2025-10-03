@@ -125,69 +125,122 @@ function dashboard() {
 }
 
 
-function logo(){
-// gsap.registerPlugin(ScrollTrigger)
-// let pin_section = document.querySelectorAll('.pin_section')
-// let pin_content_1 = document .querySelectorAll('.pin_content_1')
-// let pin_content_2 = document.querySelectorAll('.pin_content_2')
+function logo() {
+    // gsap.registerPlugin(ScrollTrigger)
+    // let pin_section = document.querySelectorAll('.pin_section')
+    // let pin_content_1 = document .querySelectorAll('.pin_content_1')
+    // let pin_content_2 = document.querySelectorAll('.pin_content_2')
 
-// const tl= gsap.timeline({
-//     trigger:'.pin_section',
-//     pin:true,
-//     scrub:true,
-//     start:"top top",
-//     end:()=>"+="+pin_section.offsetWidth*2,
-//     invalidateOnRefresh: true,
-// })
+    // const tl= gsap.timeline({
+    //     trigger:'.pin_section',
+    //     pin:true,
+    //     scrub:true,
+    //     start:"top top",
+    //     end:()=>"+="+pin_section.offsetWidth*2,
+    //     invalidateOnRefresh: true,
+    // })
 
-// tl.fromTo(pin_content_1,
-//     {x:0},
-//     {x:()=>-document.body.clientWidth,ease:"none"},0
-// )
+    // tl.fromTo(pin_content_1,
+    //     {x:0},
+    //     {x:()=>-document.body.clientWidth,ease:"none"},0
+    // )
 
-// tl.fromTo(pin_content_2,
-//     {X:0},
-//     {X:()=>document.body.clientWidth,ease:'none'},0
-// )
+    // tl.fromTo(pin_content_2,
+    //     {X:0},
+    //     {X:()=>document.body.clientWidth,ease:'none'},0
+    // )
 
 
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.to(".pin_content_1",{
-    x:-50,
-    scrollTrigger:{
-        trigger:'.pin_content_1',
-        start:"top 100%",
-        end:"bottom end",
-        scrub:true,
-        markers:false,
-    }
-})
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".pin_content_1", {
+        x: -50,
+        scrollTrigger: {
+            trigger: '.pin_content_1',
+            start: "top 100%",
+            end: "bottom end",
+            scrub: true,
+            markers: false,
+        }
+    })
 
-gsap.to(".pin_content_2",{
-    x:50,
-    scrollTrigger:{
-        trigger:'.pin_content_2',
-        start:"top 100%",
-        end:"bottom end",
-        scrub:true,
-        markers:false,
-    }
-});
+    gsap.to(".pin_content_2", {
+        x: 50,
+        scrollTrigger: {
+            trigger: '.pin_content_2',
+            start: "top 100%",
+            end: "bottom end",
+            scrub: true,
+            markers: false,
+        }
+    });
 }
 
-function about(){
+function about() {
     let aboutindex = document.querySelectorAll('.about')
-    let rightimage= document.getElementById('right_image')
-    let activeimages=[
+    let rightimage = document.getElementById('right_image')
+    let activeimages = [
 
     ];
-    let currentindex=0
-    aboutindex.forEach((item)=>{
+    let currentindex = 0
+    aboutindex.forEach((item) => {
         item.classList.remove('active')
     });
     aboutindex[currentindex].classList.add('active')
-   currentindex= (currentindex+1)% aboutindex.length
-   rightimage.src=activeimages[currentindex]
-    setInterval(about,5000)
+    currentindex = (currentindex + 1) % aboutindex.length
+    rightimage.src = activeimages[currentindex]
+    setInterval(about, 5000)
 }
+
+function slider() {
+ function startSlider(id, duration, direction = 5) {
+      const slide = document.querySelector(id);
+      const inners = slide.querySelectorAll(".inner");
+      const totalHeight = inners[0].offsetHeight;
+
+      gsap.to(inners, {
+        y: direction * -totalHeight,   // up or down
+        duration: duration,
+        ease: "none",
+        repeat: -1,
+        modifiers: {
+          y: gsap.utils.unitize(y => parseFloat(y) % totalHeight)
+        }
+      });
+    }
+
+    // Run sliders
+    startSlider("#slider_1", 5, 1);   // down
+    startSlider("#slider_2", 5, -1);  // up
+    startSlider("#slider_3", 5, 1);   // down
+}
+
+// function slider2() {
+//     var slide = document.getElementById('slider_2')
+//     var slideheight = slide.offsetHeight / 2
+//       gsap.set(slider, { y: -slideheight }); 
+//     gsap.to(slide, {
+//         y: `${slideheight}px`,
+//         duration: 20,
+//         ease: 'none',
+//         repeat: -1,
+//         modifiers: {
+//             y: gsap.utils.unitize(y => parseFloat(y) % slideheight)
+//         }
+//     })
+// }
+
+
+// function slider3() {
+//     var slide = document.getElementById('slider_3')
+//     var slideheight = slide.offsetHeight / 2
+//     gsap.to(slide, {
+//         y: `${slideheight}px`,
+//         duration: 20,
+//         ease: 'none',
+//         repeat: -1,
+//         modifiers: {
+//             y: gsap.utils.unitize(y => parseFloat(y) % slideheight)
+//         }
+//     })
+// }

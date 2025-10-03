@@ -3,6 +3,9 @@ import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 declare function title(): any;
 declare function dashboard(): any;
 declare function logo(): any;
+declare function slider(): any;
+declare function slider2(): any;
+declare function slider3(): any;
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -20,6 +23,9 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
     title();
     dashboard();
     logo();
+    // slider();
+    // slider2();
+    // slider3();
     this.change();
     this.intervalId = setInterval(() => {
       this.change();
@@ -36,7 +42,9 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
 
   private change(): void {
     const aboutindex = document.querySelectorAll('.about');
-    const rightimage = document.getElementById('right_image') as HTMLImageElement;
+    const rightimage = document.getElementById(
+      'right_image'
+    ) as HTMLImageElement;
     aboutindex.forEach((item) => {
       item.classList.remove('active');
     });
