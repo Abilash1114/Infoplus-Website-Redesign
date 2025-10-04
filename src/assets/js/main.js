@@ -178,13 +178,17 @@ function logo() {
 
 function slide(){
     gsap.registerPlugin(ScrollTrigger)
+
+      gsap.set(".first_slide",{
+        y:20,
+    })
     
     gsap.to(".first_slide",{
-        y:-120,
+        y:-350,
         scrollTrigger:{
             trigger:".first_slide",
-            start:"top -=100%",
-            end:"bottom -500%",
+            start:"top +120%",
+            end:"bottom bottom",
             scrub:true,
             markers:false,
             duration:1,
@@ -192,18 +196,18 @@ function slide(){
     })
 
     gsap.set(".secound_slide",{
-        y:-320,
+        y:-120,
     })
      gsap.to(".secound_slide",{
         
         y:120,
         scrollTrigger:{
             trigger:".secound_slide",
-            start:"top -=100%",
-            end:"bottom -500%",
+            start:"top 10%",
+            end:"bottom -50%",
             scrub:true,
             markers:false,
-            duration:1,
+            duration:3,
         }
     })
 }
