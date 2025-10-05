@@ -649,7 +649,7 @@ p {
 .sa_thired {
     grid-column: 3 / span 2;
     /* grid-row: span 2; */
-        grid-row: 1/ span 1;
+    grid-row: 1/ span 1;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -658,7 +658,7 @@ p {
     border-radius: 20px;
     overflow: hidden;
     grid-row: span 2;
-  grid-column: 3 / span 2;
+    grid-column: 3 / span 2;
 }
 
 /* Fifth block (on row 1, spans 3 columns) */
@@ -762,10 +762,68 @@ textarea {
 
 }
 
-.logoes{
+.logoes {
     width: 75px;
 }
 
-.get{
+.get {
     margin: 50px 0px;
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    .digi_card {
+        height: 400px !important;
+        margin: 0px;
+
+    }
+
+    .sub_cards img {
+        width: 80px !important;
+    }
+}
+
+@media screen and (min-width:380px) and (max-width:767px) {
+
+    .digi_card {
+        height: auto !important;
+        margin: 0px;
+    }
+
+    .ser .digi_card {
+        margin-top: 30px !important;
+    }
+    
+.head-titles {
+    margin-top: 50px;
+}
+
+.head-titles h6 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: #31312F;
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+.head-titles h6 span {
+    color: #331465;
+}
+
+.head-titles p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #45394D;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+
 }
