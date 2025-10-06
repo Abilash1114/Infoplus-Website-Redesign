@@ -1,18 +1,3 @@
-/* html,body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden !important;
-}
-
-#main{
-    height: 100%;
-    overflow: hidden;
-}
-
-#content{
-    min-height: 100%;
-} */
 p {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -546,7 +531,7 @@ p {
 .three3d {
     z-index: 99;
     position: absolute;
-    right: -50px;
+    right: -10px;
     width: 200px;
     top: 30px;
 }
@@ -770,7 +755,9 @@ textarea {
     margin: 50px 0px;
 }
 
-
+.menu {
+    display: none;
+}
 
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -784,46 +771,181 @@ textarea {
     .sub_cards img {
         width: 80px !important;
     }
+
+    .right_con {
+        margin-top: 30px;
+    }
+
+    .info_tit h6 {
+        font-size: 30px;
+    }
+
+    .right_con_tit h6 {
+        font-size: 30px;
+    }
+
+
 }
 
 @media screen and (min-width:380px) and (max-width:767px) {
+
+    .top_nav .nav_items {
+        display: none;
+    }
+
+    .top {
+        padding: 0px 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .top_nav {
+        justify-content: space-between;
+    }
+
+    .menu i {
+        font-size: 25px;
+        padding-right: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .back{
+        height: 90vh;
+    }
+
+
+    .center_box p {
+        font-size: 12px;
+    }
+
+   .ceter_title .title_anime {
+        font-size: 30px !important;
+        line-height: 50px !important;
+        font-weight: 600 !important;
+    }
+
+    .sub_text .title_anime {
+        font-size: 14px !important;
+        line-height: 30px !important;
+        margin-top: 20px !important;
+        font-weight: 400 !important;
+        display: none;
+    }
+
+
+    .ban-images img {
+        width: 50px;
+    }
+
+
+
+
+
+    .custom_wraper .three {
+        display: none;
+    }
+
+    .cus p {
+        display: none;
+    }
+
+    .three3d {
+        display: none;
+    }
 
     .digi_card {
         height: auto !important;
         margin: 0px;
     }
 
-    .ser .digi_card {
+    .digi_card {
         margin-top: 30px !important;
     }
-    
-.head-titles {
-    margin-top: 50px;
-}
 
-.head-titles h6 {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 40px;
-    text-align: center;
-    color: #31312F;
-    margin: 0px 0px 30px 0px;
-    padding: 0px;
-    font-family: "Roboto", sans-serif;
-}
+    .head-titles {
+        margin-top: 50px;
+    }
 
-.head-titles h6 span {
-    color: #331465;
-}
+    .head-titles h6 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: center;
+        color: #31312F;
+        margin: 0px 0px 30px 0px;
+        padding: 0px;
+        font-family: "Roboto", sans-serif;
+    }
 
-.head-titles p {
-    font-size: 16px;
-    font-weight: 500;
-    color: #45394D;
-    text-align: center;
-    font-weight: 500;
-    position: relative;
-    font-family: "Roboto", sans-serif;
-}
+    .head-titles h6 span {
+        color: #331465;
+    }
+
+    .head-titles p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #45394D;
+        text-align: center;
+        font-weight: 500;
+        position: relative;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .custom-shape {
+        width: 100vw;
+        height: 100px;
+        background: linear-gradient(135deg, #0a1430, #6a00b5);
+        clip-path: polygon(7% 0,
+                /* top-left cut */
+                93% 0,
+                /* top-right cut */
+                100% 100%,
+                /* bottom-right */
+                0% 100%
+                /* bottom-left */
+            );
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0px 20px 0px;
+
+    }
+
+    .right_images {
+        background-image: url('/assets/images/heart.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .right_images img {
+        padding-top: 0%;
+    }
+
+    .about-de .nu p {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Roboto", sans-serif;
+    }
+
+
+    .about-de .name p {
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 400 !important;
+    }
+
+    .right_con {
+        margin-top: 30px;
+    }
 
 }
