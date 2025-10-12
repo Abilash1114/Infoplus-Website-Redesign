@@ -184,7 +184,7 @@ function slide(){
     })
     
     gsap.to(".first_slide",{
-        y:-350,
+        y:-300,
         scrollTrigger:{
             trigger:".first_slide",
             start:"top +120%",
@@ -196,7 +196,7 @@ function slide(){
     })
 
     gsap.set(".secound_slide",{
-        y:-120,
+        y:-150,
     })
      gsap.to(".secound_slide",{
         
@@ -280,3 +280,59 @@ function slider() {
 //         }
 //     })
 // }
+
+function carde() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.fromTo(".digi_card",
+    { 
+      y: 100,
+      opacity: 0,
+      rotationX: 30,
+      transformOrigin: "top center",
+    },
+    { 
+      y: 0,
+      opacity: 1,
+      rotationX: 0,
+      duration: 1,
+      scrub:true,
+      ease: "back.out(1.7)",
+      stagger: 0.15,
+      scrollTrigger: {
+        trigger: ".digi_card",
+        start: "top 80%",
+        end: "bottom 70%",
+        toggleActions: "play none none reverse",
+      }
+    }
+  );
+}
+
+function cardes() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.fromTo(".sa_catager",
+    { 
+      y: 100,
+      opacity: 0,
+      rotationX: 30,
+      transformOrigin: "top center",
+    },
+    { 
+      y: 0,
+      opacity: 1,
+      rotationX: 0,
+      duration: 1,
+      scrub:true,
+      ease: "back.out(1.7)",
+      stagger: 0.15,
+      scrollTrigger: {
+        trigger: ".sa_catager",
+        start: "top 80%",
+        end: "bottom 70%",
+        toggleActions: "play none none reverse",
+      }
+    }
+  );
+}

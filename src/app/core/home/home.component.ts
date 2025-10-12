@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 declare function title(): any;
 declare function dashboard(): any;
 declare function logo(): any;
 declare function slide(): any;
-declare function slider2(): any;
-declare function slider3(): any;
+declare function carde(): any;
+declare function cardes(): any;
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -13,7 +13,10 @@ declare function slider3(): any;
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent implements AfterViewInit, OnDestroy {
+export class HomeComponent implements AfterViewInit, OnDestroy,OnInit {
+  ngOnInit(): void {
+    window.scrollTo({top:0,behavior:'smooth'})
+  }
   ngOnDestroy(): void {
     if (this.intervalId) {
       clearInterval(this.intervalId);
@@ -24,8 +27,8 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
     dashboard();
     logo();
     slide();
-    // slider2();
-    // slider3();
+    carde();
+    cardes();
     this.change();
     this.intervalId = setInterval(() => {
       this.change();

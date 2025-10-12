@@ -27,8 +27,26 @@ p {
     font-size: 14px !important;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
+    cursor: pointer;
 }
 
+a{
+    text-decoration: none;
+      color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px !important;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+.nav_items p a:hover{
+    color: #c587ff;
+}
+
+.nav_items p:hover{
+    color: #c587ff;
+}
 
 
 
@@ -789,20 +807,30 @@ textarea {
 
 @media screen and (min-width:380px) and (max-width:767px) {
 
-    .top_nav .nav_items {
-        display: none;
+    .top_nav{
+        height: 40px;
+        padding: 5px 0px !important;
     }
+    /* .top_nav .nav_items {
+        display: none;
+    } */
 
     .top {
         padding: 0px 10px;
     }
 
+    .nav_items p{
+        font-size: 12px !important;
+    }
+.top_nav img{
+    width: 30%;
+}
     .menu {
         display: block;
     }
 
     .top_nav {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .menu i {
@@ -949,3 +977,17 @@ textarea {
     }
 
 }
+
+.main{
+    position: relative;
+}
+
+/* .mobile_nav{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(69, 65, 65, 0.422);
+    z-index: 9999;
+} */
