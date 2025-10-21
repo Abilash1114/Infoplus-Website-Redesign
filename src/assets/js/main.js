@@ -184,7 +184,7 @@ function slide(){
     })
     
     gsap.to(".first_slide",{
-        y:-300,
+        y:-100,
         scrollTrigger:{
             trigger:".first_slide",
             start:"top +120%",
