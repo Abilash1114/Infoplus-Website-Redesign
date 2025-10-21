@@ -36,7 +36,6 @@
           "node_modules/gsap/dist/ScrollTrigger.min.js",
           "node_modules/gsap/dist/TextPlugin.min.js",
           "src/assets/js/SplitText.min.js",
-          "src/assets/js/ScrollSmoother.min.js",
           "src/assets/js/lenis.min.js",
           "src/assets/js/main.js"
             ]
