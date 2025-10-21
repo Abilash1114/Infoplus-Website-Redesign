@@ -991,3 +991,9 @@ textarea {
     background-color: rgba(69, 65, 65, 0.422);
     z-index: 9999;
 } */
+
+.about{cursor: pointer;}
+
+#services_section img{
+    width: 100% !important;
+}
